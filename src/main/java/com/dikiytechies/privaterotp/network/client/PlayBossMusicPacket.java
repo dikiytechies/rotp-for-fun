@@ -10,7 +10,10 @@ import java.util.function.Supplier;
 
 public class PlayBossMusicPacket {
     private final int bossId;
-    public PlayBossMusicPacket(int bossId) {
+    public PlayBossMusicPacket(PlayerEntity boss) {
+        this.bossId = boss.getId();
+    }
+    private PlayBossMusicPacket(int bossId) {
         this.bossId = bossId;
     }
     public static void encode(PlayBossMusicPacket msg, PacketBuffer buf) {

@@ -49,7 +49,8 @@ public class BossificateCommand {
             boss.getAttribute(Attributes.MAX_HEALTH).addTransientModifier(new AttributeModifier("booss :o", 2,AttributeModifier.Operation.MULTIPLY_TOTAL));
             boss.setHealth(boss.getMaxHealth());
             GameplayUtil.setBarStage(0);
-            AddonPackets.sendGlobally(new PlayBossMusicPacket(boss.getId()), null);
+            //Minecraft.getInstance().getSoundManager().play(new BossMusic(boss));
+            AddonPackets.sendGlobally(new PlayBossMusicPacket(boss), null);
             for (ServerPlayerEntity players: boss.level.getEntitiesOfClass(ServerPlayerEntity.class, new AxisAlignedBB(boss.blockPosition()))) {
                 bossInfo.addPlayer(players);
             }
