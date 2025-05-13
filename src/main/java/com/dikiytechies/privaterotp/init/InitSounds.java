@@ -1,7 +1,6 @@
 package com.dikiytechies.privaterotp.init;
 
 import com.dikiytechies.privaterotp.AddonMain;
-
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.SoundEvent;
 import net.minecraftforge.fml.RegistryObject;

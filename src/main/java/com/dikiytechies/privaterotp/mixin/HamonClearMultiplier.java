@@ -1,6 +1,5 @@
 package com.dikiytechies.privaterotp.mixin;
 
-import com.dikiytechies.privaterotp.capability.PrivateUtilCap;
 import com.dikiytechies.privaterotp.capability.PrivateUtilCapProvider;
 import com.github.standobyte.jojo.action.Action;
 import com.github.standobyte.jojo.power.impl.nonstand.INonStandPower;
